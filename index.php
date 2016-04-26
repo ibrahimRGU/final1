@@ -17,7 +17,7 @@
 
 <body>
 <div class="main">
-<h1 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:32px;">Welcome to Friends</h1>
+<h1 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:32px;">Welcome Friends</h1>
     <div class="formbox">
         <h3>Course Work 2, Shh... instructors no comment!</h3>
         <br><br>
