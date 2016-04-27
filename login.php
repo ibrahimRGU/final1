@@ -15,7 +15,7 @@
 	{
   	echo "You are currently locked out.";
 	 exit; // or return, or whatever.
-	}
+	
 	
 	else if(isset($_POST["submit"]))
 	{
@@ -45,7 +45,7 @@
 				$error = "Incorrect username or password.";
 			}
 		}
-	}
+	} }
 
 	
 
