@@ -17,7 +17,7 @@
 	 exit; // or return, or whatever.
 	
 	
-	else if(isset($_POST["submit"]))
+	 if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
 		{
