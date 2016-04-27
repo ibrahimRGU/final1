@@ -15,9 +15,7 @@
 	{
   	echo "You are currently locked out.";
 	  // or return, or whatever.
-	
-	$error = ""; //Variable for storing our errors.
-	 if(isset($_POST["submit"]))
+	else if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
 		{
