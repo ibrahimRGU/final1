@@ -7,7 +7,11 @@
 	$bad_login_limit = 3;
 	$lockout_time = 600;
 	$first_failed_login, failed_login_count; // retrieve from DB
-
+	if(
+	  ($failed_login_count >= $bad_login_limit)
+	 &&
+    	(time() - $first_failed_login < $lockout_time)
+	)
 	if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
