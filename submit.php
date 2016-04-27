@@ -6,7 +6,7 @@ if(isset($_POST["submit"]))
     $email = $_POST["email"];
     $password = $_POST["password"];
     //password encrypttion
-    $password = $password_hash($password, PASSWORD_BCRYPT);
+   
 
     $sql="SELECT email FROM users WHERE email='$email'";
     $result=mysqli_query($db,$sql);
