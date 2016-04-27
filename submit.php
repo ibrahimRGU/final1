@@ -3,9 +3,9 @@ $msg = "";
 if(isset($_POST["submit"]))
 
 {
-    $name = $_POST["username"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
+    $name = htmlentities($_POST["username"]);
+    $email = htmlentities($_POST["email"]);
+    $password = htmlentities($_POST["password"]);
     //password encrypttion
    
    // To protect from MySQL injection
