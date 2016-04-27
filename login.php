@@ -6,6 +6,7 @@
 	$error = ""; //Variable for storing our errors.
 	$bad_login_limit = 3;
 	$lockout_time = 600;
+	$first_failed_login, failed_login_count; // retrieve from DB
 
 	if(isset($_POST["submit"]))
 	{
