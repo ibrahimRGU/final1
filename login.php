@@ -57,7 +57,7 @@
 	}
 	
 	
-	$error = ""; //Variable for storing our errors.
+//	$error = ""; //Variable for storing our errors.
 	
 	 // user is not currently locked out, and the login is valid.
 	 // do stuff
