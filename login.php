@@ -43,10 +43,7 @@ if(
 			{
 				$error = "Incorrect username or password.";
 			}
-		}
-	}
-  
-} else if( /* login is invalid */ ) {
+		 else if( /* login is invalid */ ) {
   if( time() - $first_failed_login > $lockout_time ) {
     // first unsuccessful login since $lockout_time on the last one expired
     $first_failed_login = time(); // commit to DB
@@ -58,7 +55,13 @@ if(
 } else {
   // user is not currently locked out, and the login is valid.
   // do stuff
+
 }
+
+			
+		}
+		
+	}
 	
 
 
