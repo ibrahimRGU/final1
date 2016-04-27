@@ -55,7 +55,7 @@ if(
 } else {
   // user is not currently locked out, and the login is valid.
   // do stuff
-
+	header("location: photos.php");
 }
 
 			
