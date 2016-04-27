@@ -2,7 +2,7 @@
 $msg = "";
 if(isset($_POST["submit"]))
 
-{
+{    //added htmlentities tostrip characters as well
     $name = htmlentities($_POST["username"]);
     $email = htmlentities($_POST["email"]);
     $password = htmlentities($_POST["password"]);
