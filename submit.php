@@ -1,6 +1,7 @@
 <?php
 $msg = "";
 if(isset($_POST["submit"]))
+
 {
     $name = $_POST["username"];
     $email = $_POST["email"];
@@ -11,6 +12,7 @@ if(isset($_POST["submit"]))
 			$username = stripslashes($username);
 			   $email = stripslashes($email);
 			$password = stripslashes($password);
+			
 			$username = mysqli_real_escape_string($db, $username);
 			   $email = mysqli_real_escape_string($db, $email);
 			$password = mysqli_real_escape_string($db, $password);
