@@ -3,7 +3,10 @@
 	include("connection.php"); //Establishing connection with our database
 	
 	
-$error = ""; //Variable for storing our errors.
+	$error = ""; //Variable for storing our errors.
+	$bad_login_limit = 3;
+	$lockout_time = 600;
+
 	if(isset($_POST["submit"]))
 	{
 		if(empty($_POST["username"]) || empty($_POST["password"]))
