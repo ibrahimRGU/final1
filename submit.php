@@ -2,7 +2,7 @@
 $msg = "";
 if(isset($_POST["submit"]))
 
-{    //added htmlentities tostrip characters as well
+{    //added htmlentities tostrip characters  and protect from xss,iframe
     $name = htmlentities($_POST["username"]);
     $email = htmlentities($_POST["email"]);
     $password = htmlentities($_POST["password"]);
