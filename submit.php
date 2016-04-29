@@ -8,7 +8,7 @@ if(isset($_POST["submit"]))
     $password = htmlentities($_POST["password"]);
     //password encrypttion
    
-   /To protect from MySQL injection
+   //To protect from MySQL injection
 			$username = stripslashes($username);
 			   $email = stripslashes($email);
 			$password = stripslashes($password);
