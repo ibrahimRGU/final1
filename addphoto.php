@@ -9,6 +9,16 @@ if(isset($_POST["submit"]))
     $desc = $_POST["desc"];
     $url = "test";
     $name = $_SESSION["username"];
+    //sanitizing inputes
+            $title = stripslashes($title);
+			$desc = stripslashes($desc);
+			$password = stripslashes($password);
+			
+			$username = mysqli_real_escape_string($db, $username);
+			   $email = mysqli_real_escape_string($db, $email);
+			$password = mysqli_real_escape_string($db, $password);
+
+
 
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
