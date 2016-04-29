@@ -33,5 +33,6 @@ if(isset($_POST["submit"]))
         $resultText = "no user with that username";
 
     }
-}}
+}
+}
 ?>
