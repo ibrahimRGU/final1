@@ -2,8 +2,10 @@
 
 	include("connection.php");
 	include("submit.php");
-
+	// Turn off error reporting
+	error_reporting(0);
 ?>
+
 <!doctype html>
 <html>
 <head>
