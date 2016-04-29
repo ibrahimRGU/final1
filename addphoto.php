@@ -23,11 +23,25 @@ if(isset($_POST["submit"]))
     $target_dir = "uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+   
     $uploadOk = 1;
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+	//limit file size
+	if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+	}
+	else 
+	// Allow certain file formats
+	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+	&& $imageFileType != "gif" ) {
+	  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+	 $uploadOk = 0;
+	}
+	else
 
     if(mysqli_num_rows($result) == 1) {
         //$timestamp = time();
