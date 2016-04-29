@@ -2,11 +2,11 @@
 $resultText = "";
 if(isset($_POST["submit"]))
 {
-    $name = $_POST["username"];
+    $name = mysqli_real_escape_string($_POST["username"]);
     
     // To protect from MySQL injection
     //$name = stripslashes($username);
-	$name = mysqli_real_escape_string($db, $username);
+//	$name = mysqli_real_escape_string($db, $username);
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
