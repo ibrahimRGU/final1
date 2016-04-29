@@ -8,7 +8,7 @@ if(isset($_POST["submit"]))
     $password = htmlentities($_POST["password"]);
     //password encrypttion
    
-   // To protect from MySQL injection
+   /* To protect from MySQL injection
 			$username = stripslashes($username);
 			   $email = stripslashes($email);
 			$password = stripslashes($password);
@@ -16,7 +16,7 @@ if(isset($_POST["submit"]))
 			$username = mysqli_real_escape_string($db, $username);
 			   $email = mysqli_real_escape_string($db, $email);
 			$password = mysqli_real_escape_string($db, $password);
-			$password = md5($password);
+			$password = md5($password);*/
 
     $sql="SELECT email FROM users WHERE email='$email'";
     $result=mysqli_query($db,$sql);
