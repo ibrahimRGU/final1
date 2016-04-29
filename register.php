@@ -20,9 +20,9 @@
 		<br><br>
 		<form method="post" action="">
 			<label>Username:</label><br>
-			<input type="text" name="username" placeholder="username" required/><br><br>
+			<input type="text" name="username" placeholder="username" size="25" required/><br><br>
 			<label>Email:</label><br>
-			<input type="email" name="email" placeholder="email" required />  <br><br>
+			<input type="email" name="email" placeholder="email" size="25" required />  <br><br>
 			<label>Password:</label><br>
 			<input type="password" name="password" placeholder="password" required/>  <br><br>
 			<input type="submit" name="submit" value="Register!" />
