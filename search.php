@@ -1,8 +1,9 @@
 <?php
 $resultText = "";
 if(isset($_POST["submit"]))
+{ $searchq = preg_replace("#[^0-9a-z]#i,"",$searchq);
 {
-    $name = mysqli_real_escape_string($_POST["username"]);
+    $name = $_POST["username"];
     
     // To protect from MySQL injection
     //$name = stripslashes($username);
