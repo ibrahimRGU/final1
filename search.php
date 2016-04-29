@@ -1,13 +1,9 @@
 <?php
 $resultText = "";
 if(isset($_POST["submit"]))
- $searchq = preg_replace("#[^0-9a-z]#i,"",$searchq);
+
 {
     $name = $_POST["username"];
-    
-    // To protect from MySQL injection
-    //$name = stripslashes($username);
-//	$name = mysqli_real_escape_string($db, $username);
 
     $sql="SELECT userID FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
