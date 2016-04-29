@@ -1,7 +1,7 @@
 <?php
 $resultText = "";
 if(isset($_POST["submit"]))
-{ $searchq = preg_replace("#[^0-9a-z]#i,"",$searchq);}
+{ $searchq = preg_replace("#[^0-9a-z]#i,"",$searchq);
 {
     $name = $_POST["username"];
     
@@ -33,5 +33,5 @@ if(isset($_POST["submit"]))
         $resultText = "no user with that username";
 
     }
-}
+}}
 ?>
