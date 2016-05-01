@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>PHP Login Form with Session</title>
+<title>Welcome to Photo Commenter</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -19,7 +19,7 @@
 <div class="main">
 <h1 style="font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif; font-size:32px;">Welcome Friends</h1>
     <div class="formbox">
-        <h3>Course Work 2, Shh... instructors no comment!</h3>
+        <h3>Login Form</h3>
         <br><br>
         <form method="post" action="">
             <label>Username:</label><br>
