@@ -1,6 +1,6 @@
 <?php
 
-/*include('connection.php');
+include('connection.php');
 session_start();
 $user_check=$_SESSION['username'];
 
@@ -16,7 +16,7 @@ if($row['admin']==1){
 if(!isset($user_check))
 {
 header("Location: index.php");
-}*/
+}
 
 
 <?php
@@ -29,7 +29,7 @@ if (!($ip==$_SERVER['REMOTE_ADDR'])){
 }
 
 //check logut/idle time
-if($_SESSION ["timeout"]+60 < time()){
+if($_SESSION ["timeout"]+20 < time()){
 
     //session timed out
     header("location: logout.php"); // Redirecting To Other Page
