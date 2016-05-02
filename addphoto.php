@@ -10,12 +10,14 @@ if(isset($_POST["submit"]))
     $url = "test";
     $name = $_SESSION["username"];
     //sanitizing inputes
-            $title = stripslashes($title);
+            		$title = stripslashes($title);
 			$desc = stripslashes($desc);
 			$password = stripslashes($password);
 			
 			$username = mysqli_real_escape_string($db, $username);
-			   $email = mysqli_real_escape_string($db, $email);
+			$desc = mysqli_real_escape_string($db, $desc);
+			$url = mysqli_real_escape_string($db, $url);
+			   $title = mysqli_real_escape_string($db, $title);
 			$password = mysqli_real_escape_string($db, $password);
 
 
