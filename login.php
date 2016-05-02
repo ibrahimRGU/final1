@@ -1,6 +1,10 @@
 <?php
 	session_start();
+	$_SESSION["timeout"] = time();//get session time
+        $_SESSION["ip"] = $_SERVER['REMOTE_ADDR'];//get session time
 	include("connection.php"); //Establishing connection with our database
+	
+	
 	
 	$error = ""; //Variable for storing our errors.
 	if(isset($_POST["submit"]))
