@@ -1,5 +1,4 @@
 <?php
-
 include('connection.php');
 session_start();
 $user_check=$_SESSION['username'];
@@ -16,22 +15,5 @@ if($row['admin']==1){
 if(!isset($user_check))
 {
 header("Location: index.php");
-}
-
-
-<?php
-	//check session highjacking
-if (!($ip==$_SERVER['REMOTE_ADDR'])){
-    header("location: logout.php"); // Redirecting To Other Page
-}
-
-//check logut/idle time
-if($_SESSION ["timeout"]+20 < time()){
-
-    //session timed out
-    header("location: logout.php"); // Redirecting To Other Page
-}else{
-    //reset session time
-    $_SESSION['timeout']=time();
 }
 ?>
