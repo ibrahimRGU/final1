@@ -64,7 +64,7 @@ if(isset($_POST["submit"]))
 
         //file size and format restriction
         if( ( strtolower( $uploaded_ext ) == "jpg" || strtolower( $uploaded_ext ) == "jpeg" || strtolower( $uploaded_ext ) == "png" ) &&
-            ( $uploaded_size < 10000 ) &&
+            ( $uploaded_size < 50000 ) &&
             getimagesize( $uploaded_tmp ) ) {
 
             // Move picture to Uploads directory
