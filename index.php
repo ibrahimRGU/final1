@@ -3,8 +3,8 @@
 // NB: add comments throughout!
 // encode error msg when invalid account details are received
 include('validate.php'); //include validation script.
-if(isset($_SESSION["username"])) {
-    header("location: home.php");
+if(!isset($_SESSION["username"])) {
+    header("location: index.php");
     exit();
 }
 ?>
@@ -21,7 +21,7 @@ if(isset($_SESSION["username"])) {
     </head>
     <body>
 
-        <form method="post" action="index.php" >
+        <form method="post" action="home.php" >
         <div class="container">
             <h2>Welcome to TextBookExchange!!!</h2>
             <input type="text" name="username" placeholder="Username" required><br>
