@@ -3,8 +3,8 @@
 // NB: add comments throughout!
 // encode error msg when invalid account details are received
 include('validate.php'); //include validation script.
-if(!isset($_SESSION["username"])) {
-    header("location: index.php");
+if(isset($_SESSION["username"])) {
+    header("location:home.php");
     exit();
 }
 ?>
