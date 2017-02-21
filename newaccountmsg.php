@@ -7,7 +7,7 @@
     <head>
         <meta charset="UTF-8">
         <title>New account message</title>
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
