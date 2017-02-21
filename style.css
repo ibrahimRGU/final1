@@ -1,0 +1,40 @@
+/* NB: add comments throughout! */
+
+button {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+}
+
+.cancelbutton {
+    background-color: grey;
+    width: auto;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    margin: 6px 0;
+}
+
+/*.error{
+    color:red;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+
+.container {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    font-family: sans-serif;
+}
