@@ -15,11 +15,11 @@
 			$password=$_POST['password'];
 
 			// To protect from MySQL injection
-			$username = stripslashes($username);
-			$password = stripslashes($password);
+			//$username = stripslashes($username);
+			//$password = stripslashes($password);
 			$username = mysqli_real_escape_string($db, $username);
 			$password = mysqli_real_escape_string($db, $password);
-			$password = ($password);
+			//$password = ($password);
 			
 			//Check username and password from database
 			$sql="SELECT * FROM users WHERE username='$username' and password='$password'";
@@ -33,7 +33,7 @@
 			{
 				$_SESSION['username'] = $username; // Initializing Session
 				
-				$_SESSION['user_id'] = $row['userID']; // Initializing Session
+				//$_SESSION['user_id'] = $row['userID']; // Initializing Session
 				header("location:home.php"); // Redirecting To Other Page
 			}else
 			{
