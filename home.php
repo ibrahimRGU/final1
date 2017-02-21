@@ -3,9 +3,9 @@
 
 // NB: add comments throughout!
 
-/*session_start();
+session_start();
 if(!isset($_SESSION["username"])) {
-    header("location: index.php");*/
+    header("location: index.php");
 }
 $username=$_SESSION["user"];
 ?>
